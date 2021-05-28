@@ -1,0 +1,3 @@
+[submodule "lcd_5110"]
+	path = lcd_5110
+	url = https://github.com/theamk/LCD-5110-Raspberry-Library
