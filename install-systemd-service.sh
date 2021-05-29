@@ -7,6 +7,8 @@ exe_name=$(dirname $(readlink -f "$0"))/syslcd.py
 cat >$tname <<EOF
 [Unit]
 Description=System monitor on attached 5110 LCD
+After=sysinit.target
+DefaultDependencies=no
 
 [Service]
 ExecStart=$exe_name
